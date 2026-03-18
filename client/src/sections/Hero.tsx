@@ -101,8 +101,19 @@ const Hero = () => {
       ref={sectionRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Dreamy gradient background - ORANGE */}
-      <div className="absolute inset-0 bg-gradient-to-b from-orange-50/60 via-white to-orange-50/40" />
+      {/* Background Image - Picture 1 */}
+      <div
+        className="absolute inset-0 z-0 opacity-50"
+        style={{
+          backgroundImage:
+            'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/1_b5beb266.jpeg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+        }}
+      />
+      {/* Dreamy gradient overlay - ORANGE */}
+      <div className="absolute inset-0 bg-gradient-to-b from-orange-50/40 via-white/30 to-orange-50/40" />
       
       {/* Floating orbs - dreamlike atmosphere */}
       <div ref={floatingOrbsRef} className="absolute inset-0 pointer-events-none overflow-hidden">

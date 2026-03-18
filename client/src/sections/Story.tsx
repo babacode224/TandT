@@ -13,7 +13,7 @@ const storyCards = [
     title: 'How We Met',
     description:
       'It all started with a chance encounter at a mutual friend\'s gathering. What began as a simple conversation quickly blossomed into something beautiful. We discovered shared values, dreams, and a connection that felt destined by the Divine.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/WhatsAppImage2026-03-18at1.33.43PM_33cffb15.jpeg',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/5_b322c889.jpeg',
     icon: Heart,
   },
   {
@@ -21,7 +21,7 @@ const storyCards = [
     title: 'The Proposal',
     description:
       'Under the stars, with hearts full of love and gratitude, our journey to forever began. A moment filled with joy, tears of happiness, and the promise of a lifetime together. Alhamdulillah for this beautiful blessing.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/WhatsAppImage2026-03-18at1.43.46PM_88b05f5d.jpeg',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/6_1c49c99e.jpeg',
     icon: Sparkles,
   },
   {
@@ -29,7 +29,7 @@ const storyCards = [
     title: 'The Journey',
     description:
       'From strangers to soulmates, our path has been guided by faith and love. Every step we\'ve taken together has brought us closer to this beautiful moment. We are grateful for the love and support of our families.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/WhatsAppImage2026-03-18at1.48.30PM_4e60e54c.jpeg',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/4_3da51d9a.jpeg',
     icon: Calendar,
   },
 ];

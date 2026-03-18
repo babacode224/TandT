@@ -66,7 +66,7 @@ const Nikkah = () => {
               
               {/* Image */}
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/WhatsAppImage2026-03-18at1.44.02PM_3819bfb3.jpeg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/7_df55103d.jpeg"
                 alt="The Nikkah"
                 className="w-full h-[500px] sm:h-[600px] object-cover"
               />

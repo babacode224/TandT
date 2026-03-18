@@ -66,8 +66,8 @@ const Footer = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/WhatsAppImage2026-03-18at1.24.52PM_04ed8541.jpeg"
-          alt="Wedding Rings"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/2_24f69d79.jpeg"
+          alt="Wedding Celebration"
           className="w-full h-full object-cover"
         />
         {/* Dreamy gradient overlay - ORANGE */}
