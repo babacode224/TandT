@@ -1,18 +1,22 @@
 import { Heart, Sparkles, Calendar } from 'lucide-react';
 import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 /**
  * Story Section - The Couple's Journey
  * Design: Three-column card layout with hover effects and real images
- * Animation: Staggered entrance on scroll
+ * Animation: Staggered entrance on scroll with GSAP
  */
 
 const storyCards = [
   {
     id: 1,
-    title: 'How We Met',
+    title: 'Our Journey',
     description:
-      'It all started with a chance encounter at a mutual friend\'s gathering. What began as a simple conversation quickly blossomed into something beautiful. We discovered shared values, dreams, and a connection that felt destined by the Divine.',
+      'I have known Zainab for years, originally through my twin brother as his wife\'s best friend. I first saw her back in 2017, but our paths didn\'t truly cross until much later. Everything changed on May 1st, 2023, about a month after my twin brother\'s wedding. My brother was the true architect of our story; he was the one who first started telling me about her and encouraged us to connect. What began as a simple conversation quickly blossomed into something beautiful. From those first talks, we discovered shared values, dreams, and a connection that felt destined by the Divine.',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/5_b322c889.jpeg',
     icon: Heart,
   },
@@ -20,7 +24,7 @@ const storyCards = [
     id: 2,
     title: 'The Proposal',
     description:
-      'Under the stars, with hearts full of love and gratitude, our journey to forever began. A moment filled with joy, tears of happiness, and the promise of a lifetime together. Alhamdulillah for this beautiful blessing.',
+      '"The Messenger of Allah (ﷺ) said: \'A woman is married for four things: her wealth, her family status, her beauty, and her religion. So you should wed the religious woman, otherwise you will be a loser.\'" I have come to realize that the greatest blessing in this life is not simply finding the person you want, but finding the soul you truly need—one anchored in Islamic virtue and upright character. True beauty lies in an upbringing rooted in faith, where respect and understanding are the foundation of the home. In you, I found that rare alignment of heart and Deen. Under the stars, with hearts full of love and gratitude, our journey to forever began. It was a moment filled with joy, tears of happiness, and the promise of a lifetime spent seeking His pleasure together. Alhamdulillah for this beautiful blessing.',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/6_1c49c99e.jpeg',
     icon: Sparkles,
   },
@@ -28,7 +32,7 @@ const storyCards = [
     id: 3,
     title: 'The Journey',
     description:
-      'From strangers to soulmates, our path has been guided by faith and love. Every step we\'ve taken together has brought us closer to this beautiful moment. We are grateful for the love and support of our families.',
+      '"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy." (Quran 30:21) Our path from strangers to soulmates has been a beautiful testament to faith and patience. Over these past three years, every step we have taken together has been guided by a shared devotion that brought us closer to this moment. Through this experience, we have learned that true love is found in the tranquility of a partner who fears Allah and honors the bond of family. We are deeply grateful for the love and support of our families, whose prayers have been the wind beneath our wings. Alhamdulillah, our journey has been a testament to the beauty of a union built for the sake of the Divine.',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/4_3da51d9a.jpeg',
     icon: Calendar,
   },
@@ -40,29 +44,48 @@ const Story = () => {
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    // Animate heading
-    if (headingRef.current) {
-      headingRef.current.style.opacity = '0';
-      headingRef.current.style.transform = 'translateY(30px)';
-      setTimeout(() => {
-        headingRef.current!.style.transition = 'all 1s ease-out';
-        headingRef.current!.style.opacity = '1';
-        headingRef.current!.style.transform = 'translateY(0)';
-      }, 200);
-    }
+    const ctx = gsap.context(() => {
+      // Heading animation - dreamlike
+      gsap.fromTo(
+        headingRef.current,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.2,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: headingRef.current,
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
+        }
+      );
 
-    // Animate cards with stagger
-    cardsRef.current.forEach((card, idx) => {
-      if (card) {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(40px)';
-        setTimeout(() => {
-          card.style.transition = 'all 0.8s ease-out';
-          card.style.opacity = '1';
-          card.style.transform = 'translateY(0)';
-        }, 400 + idx * 150);
-      }
-    });
+      // Cards animation with stagger - elegant reveal
+      cardsRef.current.forEach((card, index) => {
+        if (!card) return;
+
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 80 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 85%',
+              toggleActions: 'play none none reverse',
+            },
+            delay: index * 0.15,
+          }
+        );
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -122,7 +145,7 @@ const Story = () => {
                   
                   {/* Icon badge - ethereal */}
                   <div className="absolute top-5 right-5 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-soft transition-transform duration-500 group-hover:scale-110">
-                    <card.icon className="w-5 h-5 text-orange-600" />
+                    <card.icon className="w-5 h-5 text-orange-500" />
                   </div>
                 </div>
 
