@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react';
+import { useRef, useEffect } from 'react';
+import CountdownTimer from '@/components/CountdownTimer';
 
 /**
  * Hero Section - Ethereal Wedding Introduction with Bismillah
@@ -192,6 +193,11 @@ const Hero = () => {
             April 11, 2026
           </span>
           <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-orange-300" />
+        </div>
+
+        {/* Countdown Timer */}
+        <div className="mt-16">
+          <CountdownTimer />
         </div>
       </div>
 
