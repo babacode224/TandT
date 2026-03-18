@@ -70,34 +70,34 @@ const Story = () => {
       ref={sectionRef}
       className="relative py-24 sm:py-32 lg:py-40 overflow-hidden"
     >
-      {/* Dreamy background - BLUE */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-blue-50/20 to-white" />
+      {/* Dreamy background - ORANGE */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-orange-50/20 to-white" />
       
       {/* Floating decorative elements */}
       <div className="absolute top-20 right-10 w-32 h-32 opacity-10 animate-float-slow">
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 0L61.8 38.2L100 50L61.8 61.8L50 100L38.2 61.8L0 50L38.2 38.2L50 0Z" fill="#2563EB" />
+          <path d="M50 0L61.8 38.2L100 50L61.8 61.8L50 100L38.2 61.8L0 50L38.2 38.2L50 0Z" fill="#FF6B35" />
         </svg>
       </div>
       <div className="absolute bottom-40 left-10 w-24 h-24 opacity-10 animate-float" style={{ animationDelay: '3s' }}>
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 0L61.8 38.2L100 50L61.8 61.8L50 100L38.2 61.8L0 50L38.2 38.2L50 0Z" fill="#60A5FA" />
+          <path d="M50 0L61.8 38.2L100 50L61.8 61.8L50 100L38.2 61.8L0 50L38.2 38.2L50 0Z" fill="#FF8C69" />
         </svg>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div ref={headingRef} className="text-center mb-16 sm:mb-20">
-          <span className="inline-block px-5 py-2 bg-blue-100/80 text-blue-600 text-xs tracking-[0.2em] uppercase rounded-full mb-6">
+          <span className="inline-block px-5 py-2 bg-orange-100/80 text-orange-600 text-xs tracking-[0.2em] uppercase rounded-full mb-6">
             Our Story
           </span>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-textdark mb-6">
             The Beginning
           </h2>
           <div className="flex items-center justify-center gap-6">
-            <div className="w-20 h-[1px] bg-gradient-to-r from-transparent to-blue-300" />
-            <Heart className="w-5 h-5 text-blue-400 fill-blue-400" />
-            <div className="w-20 h-[1px] bg-gradient-to-l from-transparent to-blue-300" />
+            <div className="w-20 h-[1px] bg-gradient-to-r from-transparent to-orange-300" />
+            <Heart className="w-5 h-5 text-orange-400 fill-orange-400" />
+            <div className="w-20 h-[1px] bg-gradient-to-l from-transparent to-orange-300" />
           </div>
         </div>
 
@@ -122,7 +122,7 @@ const Story = () => {
                   
                   {/* Icon badge - ethereal */}
                   <div className="absolute top-5 right-5 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-soft transition-transform duration-500 group-hover:scale-110">
-                    <card.icon className="w-5 h-5 text-blue-600" />
+                    <card.icon className="w-5 h-5 text-orange-600" />
                   </div>
                 </div>
 

@@ -49,12 +49,12 @@ const Nikkah = () => {
       ref={sectionRef}
       className="relative py-24 sm:py-32 lg:py-40 overflow-hidden"
     >
-      {/* Dreamy background - BLUE */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-blue-50/30 to-white" />
+      {/* Dreamy background - ORANGE */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-orange-50/30 to-white" />
       
       {/* Floating orbs */}
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-200/10 rounded-full blur-3xl animate-float-slow" />
-      <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-blue-100/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/4 right-0 w-96 h-96 bg-orange-200/10 rounded-full blur-3xl animate-float-slow" />
+      <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-orange-100/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -72,14 +72,14 @@ const Nikkah = () => {
               />
               
               {/* Soft overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-orange-900/10 via-transparent to-transparent" />
             </div>
             
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-elevated p-5 animate-float-slow">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Calendar className="w-5 h-5 text-blue-600" />
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                  <Calendar className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
                   <p className="font-body text-xs text-textgray uppercase tracking-wide">Date</p>
@@ -93,13 +93,13 @@ const Nikkah = () => {
           <div ref={contentRef} className="lg:pl-8">
             {/* Heading */}
             <div className="mb-10 animate-item">
-              <span className="inline-block px-5 py-2 bg-blue-100/80 text-blue-600 text-xs tracking-[0.2em] uppercase rounded-full mb-6">
+              <span className="inline-block px-5 py-2 bg-orange-100/80 text-orange-600 text-xs tracking-[0.2em] uppercase rounded-full mb-6">
                 Ceremony
               </span>
               <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-textdark mb-3">
                 The Nikkah
               </h2>
-              <p className="font-display text-2xl text-blue-500 italic">
+              <p className="font-display text-2xl text-orange-500 italic">
                 A Sacred Covenant
               </p>
             </div>
@@ -114,8 +114,8 @@ const Nikkah = () => {
             {/* Details */}
             <div className="space-y-5 mb-10">
               <div className="flex items-start gap-4 animate-item">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Calendar className="w-5 h-5 text-blue-600" />
+                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Calendar className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
                   <h4 className="font-display text-lg text-textdark">Date</h4>
@@ -124,8 +124,8 @@ const Nikkah = () => {
               </div>
 
               <div className="flex items-start gap-4 animate-item">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-5 h-5 text-blue-600" />
+                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
                   <h4 className="font-display text-lg text-textdark">Time</h4>
@@ -134,8 +134,8 @@ const Nikkah = () => {
               </div>
 
               <div className="flex items-start gap-4 animate-item">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-blue-600" />
+                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
                   <h4 className="font-display text-lg text-textdark">Venue</h4>
@@ -151,7 +151,7 @@ const Nikkah = () => {
             <div className="animate-item">
               <Button
                 onClick={handleGetDirections}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-full font-body text-sm tracking-wide transition-all duration-500 hover:shadow-lg hover:scale-105"
+                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 rounded-full font-body text-sm tracking-wide transition-all duration-500 hover:shadow-lg hover:scale-105"
               >
                 <Navigation className="w-4 h-4 mr-2" />
                 Get Directions
@@ -159,8 +159,8 @@ const Nikkah = () => {
             </div>
 
             {/* Decorative quote */}
-            <div className="mt-12 pt-8 border-t border-blue-100 animate-item">
-              <p className="font-arabic text-2xl text-blue-500 text-center leading-relaxed animate-pulse-glow">
+            <div className="mt-12 pt-8 border-t border-orange-100 animate-item">
+              <p className="font-arabic text-2xl text-orange-500 text-center leading-relaxed animate-pulse-glow">
                 وَأَنكِحُوا الْأَيَامَىٰ مِنكُمْ
               </p>
               <p className="font-body text-xs text-textgray/60 text-center mt-2">
