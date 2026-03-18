@@ -68,6 +68,7 @@ const Footer = () => {
         <img
           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/2_24f69d79.jpeg"
           alt="Wedding Celebration"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         {/* Dreamy gradient overlay - ORANGE */}

@@ -66,8 +66,9 @@ const Nikkah = () => {
               
               {/* Image */}
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/7_df55103d.jpeg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/pasted_file_6xX284_11_09fae498.jpeg"
                 alt="The Nikkah"
+                loading="lazy"
                 className="w-full h-[500px] sm:h-[600px] object-cover"
               />
               

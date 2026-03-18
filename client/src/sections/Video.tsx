@@ -77,6 +77,7 @@ const Video = () => {
           <video
             className="w-full h-auto"
             controls
+            preload="metadata"
             poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/1_b5beb266.jpeg"
           >
             <source
