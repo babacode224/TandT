@@ -65,14 +65,14 @@ const QuranVerse = () => {
       ref={sectionRef}
       className="relative py-28 sm:py-36 lg:py-48 overflow-hidden"
     >
-      {/* Dreamy gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-orange-50/40 to-white" />
+      {/* Dreamy gradient background - BLUE */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-blue-50/40 to-white" />
       
       {/* Floating orbs - ethereal */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-orange-200/15 rounded-full blur-3xl animate-float-slow" />
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-orange-100/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
-        <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-orange-300/10 rounded-full blur-3xl animate-float-slow" style={{ animationDelay: '5s' }} />
+        <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-blue-200/15 rounded-full blur-3xl animate-float-slow" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-blue-100/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-blue-300/10 rounded-full blur-3xl animate-float-slow" style={{ animationDelay: '5s' }} />
       </div>
 
       {/* Decorative mandala */}
@@ -82,10 +82,10 @@ const QuranVerse = () => {
       >
         <div className="absolute inset-0 animate-rotate-slow" style={{ animationDuration: '180s' }}>
           <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-5">
-            <circle cx="200" cy="200" r="180" stroke="#FF6B35" strokeWidth="0.5" />
-            <circle cx="200" cy="200" r="150" stroke="#FF8C69" strokeWidth="0.4" strokeDasharray="4 4" />
-            <circle cx="200" cy="200" r="120" stroke="#FFB088" strokeWidth="0.5" />
-            <circle cx="200" cy="200" r="90" stroke="#FF6B35" strokeWidth="0.3" strokeDasharray="8 8" />
+            <circle cx="200" cy="200" r="180" stroke="#2563EB" strokeWidth="0.5" />
+            <circle cx="200" cy="200" r="150" stroke="#60A5FA" strokeWidth="0.4" strokeDasharray="4 4" />
+            <circle cx="200" cy="200" r="120" stroke="#93C5FD" strokeWidth="0.5" />
+            <circle cx="200" cy="200" r="90" stroke="#2563EB" strokeWidth="0.3" strokeDasharray="8 8" />
           </svg>
         </div>
       </div>
@@ -93,12 +93,12 @@ const QuranVerse = () => {
       {/* Corner decorations */}
       <div className="absolute top-16 left-16 w-16 h-16 opacity-10 animate-float-slow">
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0L40 0L40 8L8 8L8 40L0 40L0 0Z" fill="#FF6B35" />
+          <path d="M0 0L40 0L40 8L8 8L8 40L0 40L0 0Z" fill="#2563EB" />
         </svg>
       </div>
       <div className="absolute bottom-16 right-16 w-16 h-16 opacity-10 rotate-180 animate-float">
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0L40 0L40 8L8 8L8 40L0 40L0 0Z" fill="#FF8C69" />
+          <path d="M0 0L40 0L40 8L8 8L8 40L0 40L0 0Z" fill="#60A5FA" />
         </svg>
       </div>
 
@@ -106,15 +106,15 @@ const QuranVerse = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Section label */}
         <div className="flex items-center justify-center gap-6 mb-12">
-          <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-orange-300" />
-          <Heart className="w-5 h-5 text-orange-400 fill-orange-400" />
-          <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-orange-300" />
+          <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-blue-300" />
+          <Heart className="w-5 h-5 text-blue-400 fill-blue-400" />
+          <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-blue-300" />
         </div>
 
         {/* Arabic Verse - with ethereal glow */}
         <p
           ref={arabicRef}
-          className="font-arabic text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-orange-500 leading-relaxed mb-10 text-shadow-glow"
+          className="font-arabic text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-blue-600 leading-relaxed mb-10 text-shadow-glow"
           dir="rtl"
         >
           وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
@@ -131,7 +131,7 @@ const QuranVerse = () => {
         {/* Reference */}
         <p
           ref={referenceRef}
-          className="font-body text-sm text-orange-500/80 tracking-[0.2em] uppercase"
+          className="font-body text-sm text-blue-600/80 tracking-[0.2em] uppercase"
         >
           — Quran 30:21 —
         </p>
@@ -139,11 +139,11 @@ const QuranVerse = () => {
         {/* Bottom decoration - ethereal dots */}
         <div className="mt-16 flex items-center justify-center">
           <div className="flex items-center gap-3">
-            <div className="w-2 h-2 bg-orange-200 rounded-full animate-pulse" />
-            <div className="w-2.5 h-2.5 bg-orange-300 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
-            <div className="w-3 h-3 bg-orange-400 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
-            <div className="w-2.5 h-2.5 bg-orange-300 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }} />
-            <div className="w-2 h-2 bg-orange-200 rounded-full animate-pulse" style={{ animationDelay: '0.8s' }} />
+            <div className="w-2 h-2 bg-blue-200 rounded-full animate-pulse" />
+            <div className="w-2.5 h-2.5 bg-blue-300 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
+            <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
+            <div className="w-2.5 h-2.5 bg-blue-300 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }} />
+            <div className="w-2 h-2 bg-blue-200 rounded-full animate-pulse" style={{ animationDelay: '0.8s' }} />
           </div>
         </div>
       </div>

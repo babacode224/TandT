@@ -65,20 +65,19 @@ const Footer = () => {
     >
       {/* Background Image */}
       <div className="absolute inset-0">
-        <div className="w-full h-full bg-gradient-to-br from-orange-300/30 to-orange-200/20 flex items-center justify-center">
-          <div className="text-center">
-            <div className="text-9xl mb-2">💍</div>
-            <p className="text-sm text-textgray/60">Wedding Rings</p>
-          </div>
-        </div>
-        {/* Dreamy gradient overlay */}
+        <img
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/WhatsAppImage2026-03-18at1.24.52PM_04ed8541.jpeg"
+          alt="Wedding Rings"
+          className="w-full h-full object-cover"
+        />
+        {/* Dreamy gradient overlay - BLUE */}
         <div className="absolute inset-0 bg-gradient-to-t from-white via-white/85 to-white/40" />
       </div>
 
       {/* Floating orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-orange-200/10 rounded-full blur-3xl animate-float-slow" />
-        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-orange-100/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-200/10 rounded-full blur-3xl animate-float-slow" />
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-blue-100/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       </div>
 
       {/* Content */}
@@ -88,9 +87,9 @@ const Footer = () => {
       >
         {/* Decorative line - ethereal */}
         <div className="flex items-center justify-center gap-6 mb-10">
-          <div className="w-20 h-[1px] bg-gradient-to-r from-transparent to-orange-300" />
-          <Heart className="w-6 h-6 text-orange-400 fill-orange-400" />
-          <div className="w-20 h-[1px] bg-gradient-to-l from-transparent to-orange-300" />
+          <div className="w-20 h-[1px] bg-gradient-to-r from-transparent to-blue-300" />
+          <Heart className="w-6 h-6 text-blue-400 fill-blue-400" />
+          <div className="w-20 h-[1px] bg-gradient-to-l from-transparent to-blue-300" />
         </div>
 
         {/* Names */}
@@ -99,7 +98,7 @@ const Footer = () => {
           className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-textdark mb-8 text-shadow-soft"
         >
           <span className="block sm:inline">Abdul-Hamid Taiwo</span>
-          <span className="block text-orange-500 my-3 sm:my-0 sm:mx-6 text-2xl sm:text-3xl">&</span>
+          <span className="block text-blue-600 my-3 sm:my-0 sm:mx-6 text-2xl sm:text-3xl">&</span>
           <span className="block sm:inline">Zainab Titilope</span>
         </h2>
 
@@ -108,11 +107,11 @@ const Footer = () => {
           ref={dateRef}
           className="inline-flex items-center gap-6 px-10 py-5 dream-card rounded-full mb-8"
         >
-          <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-orange-300" />
-          <span className="font-display text-2xl sm:text-3xl text-orange-500 font-medium">
+          <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-blue-300" />
+          <span className="font-display text-2xl sm:text-3xl text-blue-600 font-medium">
             April 11, 2026
           </span>
-          <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-orange-300" />
+          <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-blue-300" />
         </div>
 
         {/* Hashtag */}
@@ -121,7 +120,7 @@ const Footer = () => {
           className="font-body text-sm text-textgray/70 tracking-wide mb-12"
         >
           Share your memories with{' '}
-          <span className="text-orange-500 font-medium">#TaiwoTilope2026</span>
+          <span className="text-blue-600 font-medium">#TaiwoTilope2026</span>
         </p>
 
         {/* Social link */}
@@ -129,7 +128,7 @@ const Footer = () => {
           href="https://instagram.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-textgray/70 hover:text-orange-500 transition-colors duration-500"
+          className="inline-flex items-center gap-2 text-textgray/70 hover:text-blue-600 transition-colors duration-500"
         >
           <Instagram className="w-5 h-5" />
           <span className="font-body text-sm">Follow our journey</span>
@@ -142,7 +141,7 @@ const Footer = () => {
               Made with love for our special day
             </p>
             <div className="flex items-center gap-2">
-              <Heart className="w-3 h-3 text-orange-400 fill-orange-400 animate-pulse" />
+              <Heart className="w-3 h-3 text-blue-400 fill-blue-400 animate-pulse" />
               <span className="font-body text-xs text-textgray/50">
                 Forever begins here
               </span>
@@ -154,12 +153,12 @@ const Footer = () => {
       {/* Floating decorative elements */}
       <div className="absolute bottom-32 left-16 w-14 h-14 opacity-10 animate-float-slow">
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 0L61.8 38.2L100 50L61.8 61.8L50 100L38.2 61.8L0 50L38.2 38.2L50 0Z" fill="#FF6B35" />
+          <path d="M50 0L61.8 38.2L100 50L61.8 61.8L50 100L38.2 61.8L0 50L38.2 38.2L50 0Z" fill="#2563EB" />
         </svg>
       </div>
       <div className="absolute top-48 right-16 w-10 h-10 opacity-10 animate-float" style={{ animationDelay: '3s' }}>
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 0L61.8 38.2L100 50L61.8 61.8L50 100L38.2 61.8L0 50L38.2 38.2L50 0Z" fill="#FF8C69" />
+          <path d="M50 0L61.8 38.2L100 50L61.8 61.8L50 100L38.2 61.8L0 50L38.2 38.2L50 0Z" fill="#60A5FA" />
         </svg>
       </div>
     </footer>
