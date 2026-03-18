@@ -3,6 +3,7 @@ import Story from "@/sections/Story";
 import Nikkah from "@/sections/Nikkah";
 import Celebration from "@/sections/Celebration";
 import Video from "@/sections/Video";
+import BestGift from "@/sections/BestGift";
 import QuranVerse from "@/sections/QuranVerse";
 import Footer from "@/sections/Footer";
 
@@ -47,6 +48,7 @@ export default function Home() {
         <Nikkah />
         <Celebration />
         <Video />
+        <BestGift />
         <QuranVerse />
         <Footer />
       </main>
