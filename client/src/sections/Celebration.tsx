@@ -110,7 +110,7 @@ const Celebration = () => {
                 </div>
                 <div>
                   <h4 className="font-display text-lg text-textdark">Time</h4>
-                  <p className="font-body text-textgray/70">4:00 PM - 10:00 PM</p>
+                  <p className="font-body text-textgray/70">11:00 AM - 4:00 PM</p>
                 </div>
               </div>
 
@@ -133,7 +133,7 @@ const Celebration = () => {
                 </div>
                 <div>
                   <h4 className="font-display text-lg text-textdark">Dress Code</h4>
-                  <p className="font-body text-textgray/70">Formal / Traditional Attire</p>
+                  <p className="font-body text-textgray/70">WHITE & ORANGE</p>
                 </div>
               </div>
             </div>
