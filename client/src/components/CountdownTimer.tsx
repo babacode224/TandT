@@ -52,26 +52,26 @@ const CountdownTimer = () => {
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 opacity-20 blur-lg"></div>
         
         {/* Main circle background */}
-        <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-orange-100 to-orange-50 border-2 border-orange-300 flex items-center justify-center shadow-lg">
-          <span className="text-2xl md:text-3xl font-bold text-orange-700">
+        <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-gradient-to-br from-orange-100 to-orange-50 border-2 border-orange-300 flex items-center justify-center shadow-lg">
+          <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-orange-700">
             {String(value).padStart(2, '0')}
           </span>
         </div>
       </div>
-      <p className="mt-3 text-xs md:text-sm font-semibold text-gray-700 uppercase tracking-wider">
+      <p className="mt-2 sm:mt-3 text-[10px] sm:text-xs md:text-sm font-semibold text-gray-700 uppercase tracking-wider">
         {label}
       </p>
     </div>
   );
 
   return (
-    <div className="flex justify-center items-center gap-4 md:gap-6 lg:gap-8 py-8">
+    <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 py-6 sm:py-8">
       <CountdownUnit value={timeRemaining.days} label="Days" />
-      <div className="text-2xl md:text-3xl font-bold text-orange-600 self-start mt-2">:</div>
+      <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 self-start mt-1 sm:mt-2">:</div>
       <CountdownUnit value={timeRemaining.hours} label="Hours" />
-      <div className="text-2xl md:text-3xl font-bold text-orange-600 self-start mt-2">:</div>
+      <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 self-start mt-1 sm:mt-2">:</div>
       <CountdownUnit value={timeRemaining.minutes} label="Minutes" />
-      <div className="text-2xl md:text-3xl font-bold text-orange-600 self-start mt-2">:</div>
+      <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 self-start mt-1 sm:mt-2">:</div>
       <CountdownUnit value={timeRemaining.seconds} label="Seconds" />
     </div>
   );
