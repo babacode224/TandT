@@ -160,7 +160,7 @@ const Hero = () => {
               بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
             </p>
             <p className="font-body text-[10px] sm:text-xs md:text-sm text-orange-500/70 tracking-[0.15em] sm:tracking-[0.2em] uppercase">
-              In the name of Allah, the Most Merciful
+              In the name of Allah, the Most Gracious the Most Merciful
             </p>
           </div>
         </div>
