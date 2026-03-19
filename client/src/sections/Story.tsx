@@ -16,9 +16,9 @@ gsap.registerPlugin(ScrollTrigger);
 const storyCards = [
   {
     id: 1,
-    title: 'Our Journey',
+    title: 'How we Met',
     description:
-      'I have known Zainab for years, originally through my twin brother as his wife\'s best friend. I first saw her back in 2017, but our paths didn\'t truly cross until much later. Everything changed on May 1st, 2023, about a month after my twin brother\'s wedding. My brother was the true architect of our story; he was the one who first started telling me about her and encouraged us to connect. What began as a simple conversation quickly blossomed into something beautiful. From those first talks, we discovered shared values, dreams, and a connection that felt destined by the Divine.',
+      'I have known Zainab for years, originally through my twin brother as his wife\'s best friend. I first saw her back in 2017, but our paths didn\'t truly cross until much later. Everything changed on May 1st, 2023, about six months after my twin brother\'s wedding. My brother was the true architect of our story; he was the one who first started telling me about her and encouraged us to connect. What began as a simple conversation quickly blossomed into something beautiful. From those first talks, we discovered shared values, dreams, and a connection that felt destined by the Divine.',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/5_b322c889.jpeg',
     icon: Heart,
   },
@@ -32,7 +32,7 @@ const storyCards = [
   },
   {
     id: 3,
-    title: 'The Journey',
+    title: 'Our Journey',
     description:
       '"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy." (Quran 30:21) Our path from strangers to soulmates has been a beautiful testament to faith and patience. Over these past three years, every step we have taken together has been guided by a shared devotion that brought us closer to this moment. Through this experience, we have learned that true love is found in the tranquility of a partner who fears Allah and honors the bond of family. We are deeply grateful for the love and support of our families, whose prayers have been the wind beneath our wings. Alhamdulillah, our journey has been a testament to the beauty of a union built for the sake of the Divine.',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/4_3da51d9a.jpeg',
