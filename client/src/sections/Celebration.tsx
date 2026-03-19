@@ -87,7 +87,7 @@ const Celebration = () => {
 
             {/* Description */}
             <p className="font-body text-textgray/80 leading-relaxed mb-8 card-item">
-              After the Nikkah ceremony, we invite our beloved family and friends to join 
+              We invite our beloved family and friends to join 
               us for an evening of joy, delicious food, and beautiful memories as we 
               celebrate the beginning of our new chapter together.
             </p>
