@@ -21,6 +21,7 @@ const BestGift = () => {
     { name: 'Blender Set', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/blender-set-9pgKsF7bHBNukoYNHA6V7Z.webp' },
     { name: 'Toasting Machine', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/toasting-machine-dXPiFhNnyGDd9UWyk9rnrg.webp' },
     { name: 'Electric Kettle', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/electric-kettle-K7yxa4PNpTQrmPKKgLAbpB.webp' },
+    { name: 'Standing Fan', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/standing-fan-QJnKpXvZtYhWmRsLpBcFgH.webp' },
   ];
 
   useEffect(() => {
