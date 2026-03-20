@@ -51,7 +51,7 @@ const Celebration = () => {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/celebration-venue_b42067b3.jpg"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/10_e617a56a.jpeg"
           alt="Wedding Celebration Venue"
           loading="lazy"
           className="w-full h-full object-cover"
@@ -87,7 +87,7 @@ const Celebration = () => {
 
             {/* Description */}
             <p className="font-body text-textgray/80 leading-relaxed mb-8 card-item">
-              We invite our beloved family and friends to join 
+              After the Nikkah ceremony, we invite our beloved family and friends to join 
               us for an evening of joy, delicious food, and beautiful memories as we 
               celebrate the beginning of our new chapter together.
             </p>

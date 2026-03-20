@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import CountdownTimer from '@/components/CountdownTimer';
 
 /**
@@ -107,7 +107,7 @@ const Hero = () => {
         className="absolute inset-0 z-0 opacity-50"
         style={{
           backgroundImage:
-            'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/hero-bg_c8c4d1b1.jpg)',
+            'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/1_b5beb266.jpeg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
@@ -123,48 +123,89 @@ const Hero = () => {
         <div className="absolute bottom-1/4 left-1/3 w-28 h-28 sm:w-40 sm:h-40 md:w-56 md:h-56 bg-orange-100/25 rounded-full blur-3xl animate-float-slow" style={{ animationDelay: '4s' }} />
       </div>
 
-      {/* Decorative mandala SVG */}
-      <div ref={decorRef} className="absolute inset-0 pointer-events-none overflow-hidden hidden sm:flex items-center justify-center">
-        <svg className="w-96 h-96 opacity-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-orange-600" />
-          <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-orange-600" />
-          <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-orange-600" />
-          <circle cx="100" cy="100" r="30" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-orange-600" />
-          {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
-            <line key={angle} x1="100" y1="100" x2={100 + 90 * Math.cos((angle * Math.PI) / 180)} y2={100 + 90 * Math.sin((angle * Math.PI) / 180)} stroke="currentColor" strokeWidth="0.5" className="text-orange-600" />
-          ))}
-        </svg>
+      {/* Decorative mandala */}
+      <div
+        ref={decorRef}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[700px] lg:w-[800px] lg:h-[800px] pointer-events-none"
+      >
+        <div className="absolute inset-0 animate-rotate-slow" style={{ animationDuration: '120s' }}>
+          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-10">
+            <circle cx="200" cy="200" r="190" stroke="#FF6B35" strokeWidth="0.3" strokeDasharray="2 6" />
+            <circle cx="200" cy="200" r="160" stroke="#FF8C69" strokeWidth="0.4" />
+            <circle cx="200" cy="200" r="130" stroke="#FF6B35" strokeWidth="0.3" strokeDasharray="8 8" />
+            <circle cx="200" cy="200" r="100" stroke="#FFAA88" strokeWidth="0.5" />
+            {[...Array(8)].map((_, i) => (
+              <ellipse
+                key={i}
+                cx="200"
+                cy="50"
+                rx="15"
+                ry="30"
+                fill="none"
+                stroke="#FF6B35"
+                strokeWidth="0.3"
+                transform={`rotate(${i * 45} 200 200)`}
+              />
+            ))}
+          </svg>
+        </div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-        {/* Bismillah */}
-        <div ref={bismillahRef} className="mb-8 sm:mb-12">
-          <p className="font-amiri text-2xl sm:text-3xl md:text-4xl text-orange-700 mb-2">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
-          <p className="text-xs sm:text-sm md:text-base text-orange-600 tracking-wide">IN THE NAME OF ALLAH, THE MOST GRACIOUS THE MOST MERCIFUL</p>
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        {/* Bismillah Calligraphy - PROMINENT */}
+        <div ref={bismillahRef} className="mb-6 sm:mb-10 animate-scale-breathe">
+          <div className="inline-block">
+            <p className="font-arabic text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-orange-600 leading-relaxed mb-3 sm:mb-6 text-shadow-glow">
+              بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+            </p>
+            <p className="font-body text-[10px] sm:text-xs md:text-sm text-orange-500/70 tracking-[0.15em] sm:tracking-[0.2em] uppercase">
+              In the name of Allah, the Most Gracious the Most Merciful
+            </p>
+          </div>
         </div>
 
-        {/* Names */}
-        <h1 ref={namesRef} className="font-serif text-3xl sm:text-4xl md:text-6xl text-gray-800 mb-4 sm:mb-6">
-          Abdul-Hamid Taiwo & Zainab
+        {/* Couple Names */}
+        <h1
+          ref={namesRef}
+          className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-textdark mb-4 sm:mb-6 tracking-wide text-shadow-soft"
+        >
+          <span className="block sm:inline text-xl sm:text-4xl md:text-5xl lg:text-6xl">Abdul-Hamid Taiwo</span>
+          <span className="block text-orange-600 my-2 sm:my-0 sm:mx-4 md:mx-6 text-lg sm:text-3xl md:text-4xl">&</span>
+          <span className="block sm:inline text-xl sm:text-4xl md:text-5xl lg:text-6xl">Zainab Titilope</span>
         </h1>
 
         {/* Subtitle */}
-        <p ref={subtitleRef} className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 font-light">
-          A union blessed by Allah, built on faith, love, and devotion
+        <p
+          ref={subtitleRef}
+          className="font-body text-xs sm:text-sm md:text-base tracking-[0.3em] sm:tracking-[0.4em] uppercase text-textgray/80 mb-6 sm:mb-10"
+        >
+          Are Getting Married
         </p>
 
-        {/* Countdown Timer */}
-        <div ref={dateRef} className="mb-8 sm:mb-12">
-          <CountdownTimer />
+        {/* Date - dreamlike pill */}
+        <div
+          ref={dateRef}
+          className="inline-flex items-center gap-3 sm:gap-6 px-4 sm:px-8 md:px-10 py-3 sm:py-5 dream-card rounded-full flex-wrap justify-center"
+        >
+          <div className="hidden sm:block w-8 sm:w-12 md:w-16 h-[1px] bg-gradient-to-r from-transparent to-orange-300" />
+          <span className="font-display text-lg sm:text-2xl md:text-3xl text-orange-600 font-medium">
+            April 11, 2026
+          </span>
+          <div className="hidden sm:block w-8 sm:w-12 md:w-16 h-[1px] bg-gradient-to-l from-transparent to-orange-300" />
         </div>
 
-        {/* Scroll indicator */}
-        <div className="flex justify-center items-center gap-2 text-orange-600 text-sm animate-bounce">
-          <span>Scroll</span>
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
+        {/* Countdown Timer */}
+        <div className="mt-8 sm:mt-12 md:mt-16">
+          <CountdownTimer />
+        </div>
+      </div>
+
+      {/* Scroll indicator - ethereal */}
+      <div className="absolute bottom-4 sm:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 sm:gap-3">
+        <span className="text-[10px] sm:text-xs text-textgray/60 tracking-[0.2em] sm:tracking-[0.3em] uppercase">Scroll</span>
+        <div className="w-5 sm:w-7 h-10 sm:h-12 border-2 border-orange-200/60 rounded-full flex justify-center pt-1 sm:pt-2">
+          <div className="w-1 sm:w-1.5 h-1 sm:h-1.5 bg-orange-400/80 rounded-full animate-bounce" />
         </div>
       </div>
     </section>

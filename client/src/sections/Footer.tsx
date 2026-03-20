@@ -66,7 +66,7 @@ const Footer = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/story-proposal_9a8ea604.jpg"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/2_24f69d79.jpeg"
           alt="Wedding Celebration"
           loading="lazy"
           className="w-full h-full object-cover"

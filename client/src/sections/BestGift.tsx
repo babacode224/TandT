@@ -12,16 +12,16 @@ const BestGift = () => {
   const accountRef = useRef<HTMLDivElement>(null);
 
   const giftItems = [
-    { name: 'Washing Machine', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/washing-machine_0a407683.png' },
-    { name: 'Fridge Freezer', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/fridge-freezer_aea574ff.png' },
-    { name: 'TV (55 Inches)', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/tv-55inch_e4fab5ea.png' },
-    { name: 'Gas Cooker', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/gas-cooker_b7d3e14e.png' },
-    { name: 'Microwave Oven', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/microwave-oven_ffc109a8.png' },
-    { name: 'Air Fryer', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/air-fryer_295d8bc8.png' },
-    { name: 'Blender Set', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/blender-set_fbdfafba.png' },
-    { name: 'Toasting Machine', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/toasting-machine_2fde4f1b.png' },
-    { name: 'Electric Kettle', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/electric-kettle_0aad4cf0.png' },
-    { name: 'Standing Fan', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/standing-fan_00b4d93b.png' },
+    { name: 'Washing Machine', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/washing-machine-jBpCJyq8gBtRaVraxUqNcg.webp' },
+    { name: 'Fridge Freezer', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/fridge-freezer-2f9AJMuUTdtjnpfdr8UDBP.webp' },
+    { name: 'TV (55 Inches)', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/tv-55inch-icBU6FBTcerZJLDurmBebu.webp' },
+    { name: 'Gas Cooker', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/gas-cooker-DKq3CqNvzyBPoatENwWh3y.webp' },
+    { name: 'Microwave Oven', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/microwave-oven-KwHngkNkgWSsJDHxKztbav.webp' },
+    { name: 'Air Fryer', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/air-fryer-TZi9DuQzqqYtNJpCbJUNtK.webp' },
+    { name: 'Blender Set', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/blender-set-9pgKsF7bHBNukoYNHA6V7Z.webp' },
+    { name: 'Toasting Machine', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/toasting-machine-dXPiFhNnyGDd9UWyk9rnrg.webp' },
+    { name: 'Electric Kettle', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/electric-kettle-K7yxa4PNpTQrmPKKgLAbpB.webp' },
+    { name: 'Standing Fan', image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/standing-fan-QJnKpXvZtYhWmRsLpBcFgH.webp' },
   ];
 
   useEffect(() => {
