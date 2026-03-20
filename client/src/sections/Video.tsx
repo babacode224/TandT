@@ -81,7 +81,7 @@ const Video = () => {
             poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/1_b5beb266.jpeg"
           >
             <source
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/Love_a69aeac0.mp4"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/Love1_23e43e3b.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
