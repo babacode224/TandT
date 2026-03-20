@@ -51,7 +51,7 @@ const Celebration = () => {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/10_e617a56a.jpeg"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/celebration-venue_b42067b3.jpg"
           alt="Wedding Celebration Venue"
           loading="lazy"
           className="w-full h-full object-cover"

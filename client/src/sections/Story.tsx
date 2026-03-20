@@ -19,7 +19,7 @@ const storyCards = [
     title: 'How we Met',
     description:
       'I have known Zainab for years, originally through my twin brother as his wife\'s best friend. I first saw her back in 2017, but our paths didn\'t truly cross until much later. Everything changed on May 1st, 2023, about six months after my twin brother\'s wedding. My brother was the true architect of our story; he was the one who first started telling me about her and encouraged us to connect. What began as a simple conversation quickly blossomed into something beautiful. From those first talks, we discovered shared values, dreams, and a connection that felt destined by the Divine.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/5_b322c889.jpeg',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/story-met_03ae42c5.jpg',
     icon: Heart,
   },
   {
@@ -27,7 +27,7 @@ const storyCards = [
     title: 'The Proposal',
     description:
       '"The Messenger of Allah (ﷺ) said: \'A woman is married for four things: her wealth, her family status, her beauty, and her religion. So you should wed the religious woman, otherwise you will be a loser.\'" I have come to realize that the greatest blessing in this life is not simply finding the person you want, but finding the soul you truly need, one anchored in Islamic virtue and upright character. True beauty lies in an upbringing rooted in faith, where respect and understanding are the foundation of the home. In you, I found that rare alignment of heart and Deen. Under the stars, with hearts full of love and gratitude, our journey to forever began. It was a moment filled with joy, tears of happiness, and the promise of a lifetime spent seeking His pleasure together. Alhamdulillah for this beautiful blessing.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/6_1c49c99e.jpeg',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/story-proposal_9a8ea604.jpg',
     icon: Sparkles,
   },
   {
@@ -35,7 +35,7 @@ const storyCards = [
     title: 'Our Journey',
     description:
       '"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy." (Quran 30:21) Our path from strangers to soulmates has been a beautiful testament to faith and patience. Over these past three years, every step we have taken together has been guided by a shared devotion that brought us closer to this moment. Through this experience, we have learned that true love is found in the tranquility of a partner who fears Allah and honors the bond of family. We are deeply grateful for the love and support of our families, whose prayers have been the wind beneath our wings. Alhamdulillah, our journey has been a testament to the beauty of a union built for the sake of the Divine.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/4_3da51d9a.jpeg',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/story-journey_2560c649.jpg',
     icon: Calendar,
   },
 ];
