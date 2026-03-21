@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 const storyCards = [
   {
     id: 1,
-    title: 'Our Journey',
+    title: 'From Taiwo',
     description:
       'I have known Zainab for years, originally through my twin brother as his wife\'s best friend. I first saw her back in 2017, but our paths didn\'t truly cross until much later. Everything changed on May 1st, 2023, about a month after my twin brother\'s wedding. My brother was the true architect of our story; he was the one who first started telling me about her and encouraged us to connect. What began as a simple conversation quickly blossomed into something beautiful. From those first talks, we discovered shared values, dreams, and a connection that felt destined by the Divine.',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/5_b322c889.jpeg',
@@ -24,6 +24,14 @@ const storyCards = [
   },
   {
     id: 2,
+    title: 'From Titi',
+    description:
+      'One of my Ustaadh introduced his twin brother to us the very first day we met. We exchanged greetings and that was it. Nothing more. No expectations, no thoughts of what Allah had already written. A few years after graduation, I attended my best friend\'s nikkah. That day was filled with so much joy and barakah. I couldn\'t make it back home, so I spent the night at my Ustaadh\'s family house, surrounded by warmth and familiarity. The next morning, I packed my bags and left, unaware that a seed had been planted quietly by Allah. Not long after, I received a call from my friend, proposing on behalf of her husband\'s twin brother. To be honest, my heart was unsure at first. I didn\'t feel any immediate connection, and I questioned it. But SubhanAllah, I turned to Allah. I made duʿā, I sought His guidance, I asked for clarity. Because truly, ọkàn ènìyàn kì í mọ ibi tí ìbùkún rẹ̀ wà. And slowly, gently, Allah made it easy. What started with uncertainty began to feel like peace. A calm I could not explain. A softness that settled within me. No noise, no confusion. Just sakīnah. This journey has taught me deeply that patience is a virtue. Patience is not just waiting, it is trusting Allah even when you do not understand. And truly, Allah answers prayers in ways that leave you in awe. In him, I found a kind of tranquility my heart recognizes. A peace that reassures me. A love that feels intentional and guided. That is why our hashtag is #InBliss&Tranquility Because in him, I found peace of mind and happiness. As we step into this new phase, I pray that Allah places barakah in our union, strengthens our bond, protects our love, and makes us a source of goodness for each other in this life and the hereafter. Allāhumma bārik lanā fīhi, wa j\'alhu khayran lanā. Ameen 🤍🧡',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663312282284/DohFuRSWxGjcAaobUEn4Er/1_53f25911.jpeg',
+    icon: Heart,
+  },
+  {
+    id: 4,
     title: 'The Proposal',
     description:
       '"The Messenger of Allah (ﷺ) said: \'A woman is married for four things: her wealth, her family status, her beauty, and her religion. So you should wed the religious woman, otherwise you will be a loser.\'" I have come to realize that the greatest blessing in this life is not simply finding the person you want, but finding the soul you truly need—one anchored in Islamic virtue and upright character. True beauty lies in an upbringing rooted in faith, where respect and understanding are the foundation of the home. In you, I found that rare alignment of heart and Deen. Under the stars, with hearts full of love and gratitude, our journey to forever began. It was a moment filled with joy, tears of happiness, and the promise of a lifetime spent seeking His pleasure together. Alhamdulillah for this beautiful blessing.',
@@ -31,7 +39,7 @@ const storyCards = [
     icon: Sparkles,
   },
   {
-    id: 3,
+    id: 5,
     title: 'The Journey',
     description:
       '"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy." (Quran 30:21) Our path from strangers to soulmates has been a beautiful testament to faith and patience. Over these past three years, every step we have taken together has been guided by a shared devotion that brought us closer to this moment. Through this experience, we have learned that true love is found in the tranquility of a partner who fears Allah and honors the bond of family. We are deeply grateful for the love and support of our families, whose prayers have been the wind beneath our wings. Alhamdulillah, our journey has been a testament to the beauty of a union built for the sake of the Divine.',
